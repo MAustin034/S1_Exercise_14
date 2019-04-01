@@ -68,6 +68,17 @@ function createList(source, outlineList) {
                         n.setAttribute("id", "head" + headNum);
                   }
                   var listElem = document.createElement("li");
+
+                  // Create hypertext links to the document headings 
+                  var linkElem = document.createElement("a");
+                  linkElem.innerHTML = n.innerHTML;
+                  linkElem.setAttribute("href", "#" + n.id);
+
+                  //append hypertext link to the lust item
+                  listElem.appendChild(linkElem);
+
+
+
                   listElem.innerHTML = n.firstChild.nodeValue;
                   outlineList.appendChild(listElem);
 
@@ -79,7 +90,7 @@ function createList(source, outlineList) {
                         var nestedList = document.createElement("ol");
                         nestedList.appendChild(listElem);
                         //append nested list to last item in the current list
-                        outlineLise.lastChild.appendChild(nestedList);
+                        outlineList.lastChild.appendChild(nestedList);
                         //Change the current list to the nested list
                         outlineList = nestedList;
                   } else {
