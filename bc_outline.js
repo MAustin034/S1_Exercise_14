@@ -77,11 +77,6 @@ function createList(source, outlineList) {
                   //append hypertext link to the lust item
                   listElem.appendChild(linkElem);
 
-
-
-                  listElem.innerHTML = n.firstChild.nodeValue;
-                  outlineList.appendChild(listElem);
-
                   if (headLevel === prevLevel) {
                         // Append the list item to the current list
                         outlineList.appendChild(listElem);

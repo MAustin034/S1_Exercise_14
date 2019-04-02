@@ -53,18 +53,24 @@ function setupStyles() {
 
     // Add style rules to the embedded style sheet 
     document.styleSheets[document.styleSheets.length - 1].insertRule(
-        "div#styleButtons { \ position: fixed; \ }", 0);
+        "div#styleButtons { \
+            position: fixed; \
+        }", 0);
 
 
 
     document.styleSheets[document.styleSheets.length - 1].insertRule(
         "div#styleButtons input { \
-        background - color: rgba(68, 94, 186, 0.6);\
-        border: 3 px solid rgba(0, 24, 123, 0.6); \
-        border - radius: 50 % ;\ cursor: pointer; \
-        color: white;\ display: inline - block; \ 
-        font - size: 1.2 em;\ height: 60 px;\ margin: 5 px 10 px;\ width: 100 px;\
-    }
+        background-color: rgba(68, 94, 186, 0.6);\
+        border: 3px solid rgba(0, 24, 123, 0.6); \
+        border-radius: 50% ;\
+        cursor: pointer; \
+        color: white;\ display: inline-block; \
+        font-size: 1.2em;\
+        height: 60px;\
+        margin: 5px 10px;\
+        width: 100px; \
+    } \
     ", 1);
 
 
